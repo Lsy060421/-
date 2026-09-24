@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="宜宾职业技术学院五位优秀校友系列报道单页合集">
+  <meta name="theme-color" content="#0c1930">
+  <title>优秀校友系列报道｜五人专题合集</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c1930'/%3E%3Cpath d='M13 20h38v5H13zm6 10h26v5H19zm7 10h12v5H26z' fill='%234f7cff'/%3E%3C/svg%3E">
+  <style>
+    :root{
+      color-scheme:light;
+      --ink:#142033;
+      --muted:#647084;
+      --line:#dce3ee;
+      --paper:#ffffff;
+      --canvas:#eef2f8;
+      --nav:#0c1930;
+      --blue:#4f7cff;
+      --max:1180px;
+      font-size:16px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:2rem}
+    body{margin:0;background:var(--canvas);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",system-ui,sans-serif;line-height:1.8;text-rendering:optimizeLegibility}
+    a{color:inherit}
+    button{font:inherit}
+    ::selection{background:#cbd8ff;color:#101a2a}
+    .progress{position:fixed;z-index:100;inset:0 auto auto 0;width:0;height:4px;background:linear-gradient(90deg,#4f7cff,#25c4aa,#f0a229);box-shadow:0 0 12px #4f7cff77}
+    .hero{position:relative;overflow:hidden;background:var(--nav);color:#fff;min-height:520px;padding:36px 32px 84px}
+    .hero::after{content:"";position:absolute;border:1px solid #7696ff44;border-radius:50%;pointer-events:none}
+    .hero::after{width:220px;height:220px;left:-90px;bottom:-100px;background:linear-gradient(135deg,#4f7cff22,#25c4aa11)}
+    .hero-inner{position:relative;z-index:1;max-width:var(--max);margin:auto}
+    .masthead{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:96px;color:#b7c5df;font-size:.86rem;letter-spacing:.12em}
+    .brand{display:flex;align-items:center;gap:12px;min-width:0}
+    .brand-emblem{display:block;flex:0 0 44px;width:44px;height:44px;overflow:hidden;border-radius:50%;box-shadow:0 0 0 1px #ffffff26}
+    .brand-emblem img{display:block;width:auto;max-width:none;height:44px}
+    .brand-copy{display:grid;gap:1px;white-space:nowrap}
+    .brand-school{color:#fff;font-size:.94rem;font-weight:700;line-height:1.35;letter-spacing:.08em}
+    .brand-series{color:#91a7ce;font-size:.68rem;font-weight:500;line-height:1.35;letter-spacing:.18em}
+    .hero-grid{display:block;max-width:820px;margin:0 auto 0 0;text-align:left}
+    .hero h1{max-width:760px;margin:0;text-align:left;font-family:"STSong","Songti SC","Noto Serif CJK SC",serif;font-size:clamp(2.7rem,5.3vw,4.6rem);font-weight:900;line-height:1.14;letter-spacing:-.045em}
+    .hero h1 span{display:block;color:#9bb3ff}
+    .hero-copy{margin:34px 0 0;max-width:650px;color:#c3cee0;font-size:1.04rem;line-height:1.9;text-align:left}
+    .hero-credit{display:inline-flex;align-items:center;gap:9px;margin-top:28px;padding:7px 16px;border:1px solid #ffffff2b;border-radius:999px;background:#ffffff0e;color:#cdd7e8;font-size:.82rem;font-weight:500;line-height:1.4;letter-spacing:.03em;white-space:nowrap}
+    .hero-credit svg{flex:none;width:15px;height:15px;fill:#e6c375}
+    .layout{display:grid;grid-template-columns:310px minmax(0,1fr);gap:44px;max-width:var(--max);margin:-42px auto 0;padding:0 24px 100px;align-items:start}
+    .toc{position:sticky;top:24px;z-index:20;border:1px solid #283b61;background:#10213f;color:#eaf0fb;border-radius:18px;box-shadow:0 22px 60px #12203a26;overflow:hidden}
+    .toc-head{display:flex;align-items:center;justify-content:space-between;padding:22px 22px 17px;border-bottom:1px solid #ffffff14}
+    .toc-head h2{margin:0;font-size:.9rem;letter-spacing:.16em}
+    .toc-head span{color:#8da0c0;font-size:.76rem}
+    .toc-toggle{display:none;border:0;background:none;color:#fff;padding:6px;cursor:pointer}
+    .toc-list{list-style:none;margin:0;padding:10px 0 14px}
+    .toc-item{position:relative}
+    .toc-item::before{content:"";position:absolute;inset:8px auto 8px 0;width:3px;background:var(--blue);border-radius:0 4px 4px 0;transform:scaleY(0);transition:transform .22s ease}
+    .toc-item.active::before{transform:scaleY(1)}
+    .toc-primary{display:grid;grid-template-columns:38px 1fr;gap:12px;padding:13px 20px;text-decoration:none;transition:background .2s ease}
+    .toc-primary:hover,.toc-item.active .toc-primary{background:#ffffff0b}
+    .toc-number{color:#8294b2;font:700 .78rem/1.6 Arial,sans-serif}
+    .toc-primary strong{display:block;font-size:.98rem}
+    .toc-primary small{display:block;margin-top:1px;color:#8fa1bd;font-size:.72rem;line-height:1.5}
+    .toc-quote{display:none;margin-top:9px;padding-left:10px;border-left:1px solid #7086aa;color:#b8c5d9;font-family:"STSong","Songti SC",serif;font-size:.74rem;line-height:1.65}
+    .toc-item.active .toc-quote{display:block}
+    .content{min-width:0;padding-top:42px}
+    .intro{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:0 0 28px;padding:0 4px}
+    .intro h2{display:flex;align-items:center;min-height:78px;margin:0;padding-top:.12em;font-family:"STSong","Songti SC",serif;font-size:clamp(1.9rem,4vw,3rem);line-height:1}
+    .intro p{margin:0;color:var(--muted);font-size:.9rem;text-align:right}
+    .story{scroll-margin-top:24px;margin:0 0 34px;background:var(--paper);border:1px solid var(--line);border-radius:24px;box-shadow:0 18px 48px #20304c10;overflow:hidden}
+    .story-header{position:relative;display:grid;grid-template-columns:82px minmax(0,1fr);gap:25px;align-items:start;padding:44px 50px;background:linear-gradient(145deg,var(--soft),#fff 68%);border-bottom:1px solid var(--line)}
+    .story-index{font:900 3rem/1 Arial,sans-serif;color:var(--accent);letter-spacing:-.08em}
+    .story-kicker{margin:1px 0 12px;color:var(--accent);font-weight:800;font-size:.77rem;letter-spacing:.12em}
+    .story h2{max-width:720px;margin:0;font-family:"STSong","Songti SC","Noto Serif CJK SC",serif;font-size:clamp(2rem,4vw,3.15rem);line-height:1.22;letter-spacing:-.035em}
+    .story-subtitle{margin:13px 0 0;color:#4f5f74;font:700 1.08rem/1.6 "STSong","Songti SC",serif}
+    .story-meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:22px;color:#546276;font-size:.76rem}
+    .story-meta span+span::before{content:"/";margin-right:18px;color:#a6b0bf}
+    .story-body{max-width:800px;margin:auto;padding:46px 54px 50px;font-family:"STSong","Songti SC","Noto Serif CJK SC",serif;font-size:1.08rem;line-height:2.08}
+    .story-body p{margin:0 0 1.32em;text-align:justify;text-justify:inter-ideograph;text-indent:2em}
+    .story-body .lead{margin-bottom:3.3rem;font-size:1.16rem;font-weight:700;line-height:1.95;color:#27364c;text-indent:0}
+    .story-body .lead::first-letter{float:left;margin:.09em .12em 0 0;color:var(--accent);font:900 3.9em/.78 "STSong","Songti SC",serif}
+    .section-title{scroll-margin-top:28px;margin:4.3rem 0 1.5rem;font-family:"Microsoft YaHei","PingFang SC",sans-serif;font-size:1.45rem;line-height:1.55;letter-spacing:-.02em}
+    .section-title::after{content:"";display:block;height:3px;width:42px;margin-top:12px;border-radius:3px;background:var(--accent)}
+    .subsection-title{margin:2.35rem 0 .85rem;color:#26364d;font-family:"Microsoft YaHei","PingFang SC",sans-serif;font-size:1.05rem;line-height:1.6}
+    .story-footer{display:flex;justify-content:space-between;align-items:center;padding:18px 50px;border-top:1px solid var(--line);background:#fbfcfe;color:#798597;font-size:.76rem}
+    .story-footer a{text-decoration:none;font-weight:700;color:var(--accent)}
+    .endnote{padding:20px 0 0;text-align:center;color:#788499;font-size:.78rem}
+    .backtop{position:fixed;right:24px;bottom:24px;z-index:30;width:46px;height:46px;border:1px solid #d5deea;border-radius:50%;background:#fff;color:#22304a;box-shadow:0 10px 28px #1d2d4a25;cursor:pointer;opacity:0;transform:translateY(12px);pointer-events:none;transition:.2s}
+    .backtop.show{opacity:1;transform:none;pointer-events:auto}
+    @media (max-width:900px){
+      .hero{min-height:auto;padding:28px 22px 76px}
+      .masthead{margin-bottom:64px}
+      .layout{display:block;margin-top:-34px;padding:0 14px 70px}
+      .toc{top:10px;margin-bottom:24px;border-radius:16px}
+      .toc-head{padding:15px 18px}
+      .toc-toggle{display:block}
+      .toc-list{display:none;max-height:70vh;overflow:auto}
+      .toc.open .toc-list{display:block}
+      .content{padding-top:0}
+      .intro{min-height:0;padding:10px 8px 0}
+      .story-header{grid-template-columns:55px 1fr;padding:34px 28px;gap:18px}
+      .story-body{padding:36px 30px 40px}
+      .story-footer{padding:16px 30px}
+    }
+    @media (max-width:560px){
+      .brand{gap:9px}
+      .brand-emblem{flex-basis:38px;width:38px;height:38px}
+      .brand-emblem img{height:38px}
+      .brand-school{font-size:.84rem}
+      .brand-series{font-size:.62rem;letter-spacing:.14em}
+      .hero h1{font-size:2.7rem}
+      .hero-copy{font-size:.96rem}
+      .hero-credit{margin-top:24px;padding:7px 13px;font-size:.76rem}
+      .intro{display:block}
+      .intro h2{min-height:0;padding-top:0;line-height:1.2}
+      .intro p{margin-top:8px;text-align:left}
+      .story{border-radius:18px}
+      .story-header{display:block;padding:30px 22px}
+      .story-index{margin-bottom:18px;font-size:2.1rem}
+      .story h2{font-size:2rem}
+      .story-meta{gap:5px 10px}
+      .story-meta span+span::before{margin-right:10px}
+      .story-body{padding:30px 22px 36px;font-size:1.02rem;line-height:1.98}
+      .story-body .lead{font-size:1.08rem}
+      .section-title{font-size:1.28rem;margin-top:3.4rem}
+      .story-footer{padding:15px 22px}
+      .backtop{right:14px;bottom:14px}
+    }
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+    @media print{
+      @page{size:A4;margin:18mm}
+      body{background:#fff;color:#000}
+      .progress,.toc,.backtop,.story-footer a{display:none!important}
+      .hero{min-height:auto;background:#fff;color:#000;padding:0 0 28px;border-bottom:2px solid #000}
+      .hero::after,.masthead{display:none}
+      .hero h1 span{color:#000}
+      .hero-copy{color:#333}
+      .hero-credit{margin-top:18px;border-color:#999;background:#fff;color:#333}
+      .layout{display:block;margin:0;padding:0}
+      .content{padding:0}
+      .intro{margin:24px 0}
+      .story{break-before:page;border:0;border-radius:0;box-shadow:none}
+      .story-header{background:#fff;padding:22px 0;border-bottom:1px solid #999}
+      .story-body{max-width:none;padding:26px 0}
+      .story-footer{padding:12px 0;background:#fff}
+      .section-title{break-after:avoid}
+      p{orphans:3;widows:3}
+    }
+  </style>
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <div class="masthead">
+        <div class="brand" aria-label="宜宾职业技术学院 优秀校友系列报道">
+          <span class="brand-emblem" aria-hidden="true"><img src="data:image/png;base64,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" alt=""></span>
+          <span class="brand-copy">
+            <span class="brand-school">宜宾职业技术学院</span>
+            <span class="brand-series">优秀校友系列报道</span>
+          </span>
+        </div>
+      </div>
+      <div class="hero-grid">
+        <div>
+          <h1>从校园出发<span>在时代里发光</span></h1>
+          <p class="hero-copy">五位校友，五条不同的人生路径。他们扎根基层、拥抱创新、突破困境，也把个人成长写进了行业进步与社会发展的答卷。</p>
+          <div class="hero-credit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1.5 8.2 12 13.4l8-4v5.4h2V8.2L12 3Zm-6.5 9.4V17c0 1.7 3.2 3.5 6.5 3.5s6.5-1.8 6.5-3.5v-4.6L12 15.7l-6.5-3.3Z"/></svg><span>就业指导中心 编制 2026年9月</span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <nav class="toc" id="contents" aria-label="文章目录">
+      <div class="toc-head">
+        <h2>目录</h2>
+        <span>点击跳转</span>
+        <button class="toc-toggle" type="button" aria-expanded="false" aria-controls="toc-list" aria-label="展开目录">☰</button>
+      </div>
+      <ol class="toc-list" id="toc-list">
+        <li class="toc-item" data-target="alumni-1">
+          <a class="toc-primary" href="#alumni-1">
+            <span class="toc-number">01</span>
+            <span><strong>赵恩才</strong><small>PIE工程师</small><span class="toc-quote">“在这里，我能找到存在的价值。”</span></span>
+          </a>
+        </li>
+        <li class="toc-item" data-target="alumni-2">
+          <a class="toc-primary" href="#alumni-2">
+            <span class="toc-number">02</span>
+            <span><strong>付锡莹</strong><small>造价师 · 创业者 · 兼职教师</small><span class="toc-quote">“造价不仅是数字的游戏，更是资源最优配置的艺术。”</span></span>
+          </a>
+        </li>
+        <li class="toc-item" data-target="alumni-3">
+          <a class="toc-primary" href="#alumni-3">
+            <span class="toc-number">03</span>
+            <span><strong>王龙奎</strong><small>企业家 · 全国自强模范</small><span class="toc-quote">“能点亮一盏灯，就点亮一盏。”</span></span>
+          </a>
+        </li>
+        <li class="toc-item" data-target="alumni-4">
+          <a class="toc-primary" href="#alumni-4">
+            <span class="toc-number">04</span>
+            <span><strong>赵小燕</strong><small>园林企业负责人</small><span class="toc-quote">“是土地给了我一切，我就该回馈农村。”</span></span>
+          </a>
+        </li>
+        <li class="toc-item" data-target="alumni-5">
+          <a class="toc-primary" href="#alumni-5">
+            <span class="toc-number">05</span>
+            <span><strong>王光梅</strong><small>实业集团董事长</small><span class="toc-quote">“扎根专业、勇于探索、心怀梦想。”</span></span>
+          </a>
+        </li>
+      </ol>
+    </nav>
+
+    <section class="content" aria-label="校友报道正文">
+      <div class="intro">
+        <h2>人物报道</h2>
+        <p>按目录阅读，或向下滚动浏览全部内容</p>
+      </div>
+      
+      <article id="alumni-1" class="story" style="--accent:#2f6bff;--soft:#eaf0ff">
+        <header class="story-header">
+          <div class="story-index" aria-hidden="true">01</div>
+          <div class="story-title-block">
+            <p class="story-kicker">优秀校友系列报道---赵恩才</p>
+            <h2>基层沃土绽放青春之花</h2>
+            <p class="story-subtitle">——“小个子大能量”成长记</p>
+            <div class="story-meta"><span>赵恩才</span><span>电子信息工程技术专业</span><span>2019届</span></div>
+          </div>
+        </header>
+        <div class="story-body">
+          <p class="lead">他身高仅1.3米，却在智能终端制造的车间里撑起一片天；他先天缺乏生长激素，却以精益求精的技术和永不言弃的钻研精神，成为同事眼中的“万能钥匙”。赵恩才，中共党员，2019年毕业于宜宾职业技术学院电子信息工程技术专业，曾荣获四川省劳动模范、四川省“五一劳动奖章”、宜宾市“五一劳动奖章”、宜宾市劳动模范奖章、宜宾市优秀农民工、宜宾市“两优一先”优秀共产党员等荣誉称号，现任四川酷比通信设备有限公司PIE工程师。他用7年时间，从一名普通实习生蜕变为省劳模，用实际行动诠释了“干一行爱一行，专一行精一行”的职业信念。他的故事，是新时代基层就业大学生在平凡岗位上创造非凡价值的生动写照，更是无数青年扎根一线、以奋斗书写青春的动人缩影。</p>
+          <h3 id="alumni-1-section-1" class="section-title">一、扎根基层：从“小学徒”到“技术攻坚手”</h3>
+<h4 class="subsection-title">（一）初入职场：职高起步，技术筑基</h4>
+<p>2018年，就读于宜宾职业技术学院电子信息工程技术专业的赵恩才，以实习生身份加入四川酷比通信设备有限公司。初入组装车间时，他面对的是陌生的设备、复杂的工序和快节奏的生产线。尽管身高不足，操作设备时常需借助踏脚凳，但他从未因身体条件而退缩。他跟着师傅学习设备维修，从最基础的“小学徒”做起，每天提前到岗，最后一个离开。他随身携带一本厚厚的笔记本，记录每一个设备参数、每一条故障处理经验。正是这种“每天多学一点”的执着，让他在短短几个月内迅速掌握了MES系统维护、工艺优化等核心技能，逐渐从“跟班”成长为能独立解决问题的技术员。</p>
+<p>赵恩才深知，理论知识必须与实践紧密结合。他利用业余时间系统学习了自动化控制、机械原理等课程，并主动参与公司组织的各类技术培训。他的勤奋和悟性很快引起了车间主管的注意。主管评价他说：“赵恩才虽然不是身体条件最好的，但绝对是学习态度最认真、进步最快的一个。”正是这种对技术的热爱与专注，为他日后在技术攻坚中屡建奇功奠定了坚实基础。</p>
+<h4 class="subsection-title">（二）技术攻坚：13项生产难题的“破局者”</h4>
+<p>入职后不久，赵恩才便主动承担起车间痛点攻关任务。他发现喷胶设备使用的德国进口橡胶圈不仅成本高昂，且寿命仅半个月，频繁更换不仅影响生产效率，更成为成本控制的“硬骨头”。面对这一难题，赵恩才没有退缩。他带领团队历时3个月，走访多家国内供应商，反复测试材料性能，记录数据、分析对比，最终找到性能一致的国产替代品，成本直降11倍，三年累计为企业节省百万级耗材开支。</p>
+<p>此外，他针对手机包装返工盒标撕取效率低的问题，深入分析工艺流程，发现传统方法依赖人工操作，效率低下且易损坏标签。赵恩才利用现有恒温烤箱和加热平台，通过调整温度和预热时间，优化工艺流程，使撕取效率大幅提升，操作时间缩短近一半。这些创新成果，不仅显著降低了生产成本，更推动了车间整体效率的提升，成为企业精益生产改革中的亮点案例。</p>
+<p>赵恩才的攻坚精神不仅体现在具体技术问题上，更体现在他对生产流程的系统性思考。他先后主导或参与解决了13项生产难题，涵盖设备改良、工艺优化、耗材替代等多个方面，成为车间名副其实的“破局者”。</p>
+<h3 id="alumni-1-section-2" class="section-title">二、创新突破：百万级耗材节省的“智慧大脑”</h3>
+<h4 class="subsection-title">（一）进口零件国产化：成本直降11倍</h4>
+<p>赵恩才的“技术攻坚”并非偶然。在车间喷胶设备上，德国进口橡胶圈每月耗费数万元，成为成本控制的瓶颈。为找到替代方案，他长时间蹲在设备前记录磨损数据，一待就是两小时；他带领团队反复验证国产材料性能，从耐高温、抗老化到弹性恢复，每一项指标都不放过。经过数十次试验，最终成功实现国产替代。这一成果不仅被推广至全车间，更让企业看到基层员工的创新潜力。</p>
+<p>赵恩才在推进国产化过程中，不仅注重成本控制，更严把质量关。他建立了一套完整的材料测试与评估体系，确保每一批国产材料都符合生产要求。他的努力，不仅为企业节省了大量采购成本，更推动了供应链的本地化，增强了企业抗风险能力。</p>
+<h4 class="subsection-title">（二）工艺优化：从“差不多”到“精益求精”</h4>
+<p>“他总能在别人觉得‘差不多’的地方，挖出降本增效的空间。”四川酷比总经理于滨这样评价赵恩才。他的优化方案覆盖生产全流程：从工位布局调整到设备耗材替代，从工艺参数优化到安全效率提升。例如，在组装线的一个工位上，他发现员工取放物料动作频繁、耗时较长。通过重新设计物料架位置和角度，使员工操作时间缩短了15%，劳动强度也显著降低。</p>
+<p>赵恩才的提案累计提升生产效率15%，产品合格率提高20%，用数据证明了“小个子”的大能量。他的优化方案不仅关注技术细节，更注重人性化设计，使工位布局更符合人体工学，降低了员工疲劳度，提升了整体工作满意度。</p>
+<h3 id="alumni-1-section-3" class="section-title">三、职业信念：干一行爱一行，专一行精一行</h3>
+<h4 class="subsection-title">（一）日均12小时的钻研：车间里的“行走说明书”</h4>
+<p>赵恩才的成长，源于对技术的极致追求。他每天加班至深夜，日均工作12小时以上，将车间视为“第二个家”。同事们称他为“行走说明书”——无论是MES系统故障还是工艺难题，他总能迅速给出解决方案。他的手机里存满了设备图纸、参数表、故障代码，随时准备应对突发问题。</p>
+<p>一次，生产线上一台关键设备突发故障，导致整条线停产。维修人员一时找不到问题根源，赵恩才接到通知后立即赶到现场。他仔细检查设备运行记录，分析电路图，最终在一个不起眼的传感器上找到了问题所在。仅用半小时，设备恢复正常，避免了更大损失。这样的案例在赵恩才的工作中不胜枚举，他的专业能力和快速反应能力，赢得了同事和领导的高度信任。</p>
+<h4 class="subsection-title">（二）拒绝诱惑：扎根基层的“定海神针”</h4>
+<p>随着赵恩才在业内的知名度不断提升，多家企业向他抛出橄榄枝，开出高薪待遇。然而，他均婉言谢绝，选择坚守酷赛科技。他坦言：“在这里，我能找到存在的价值。”他的选择，源于对职业的热爱，更源于对企业培养机制的认同。公司为他提供了广阔的发展平台和持续的学习机会，使他能够不断突破自我、实现技术跨越。</p>
+<p>赵恩才的坚守，不仅是个人的职业选择，更是一种价值导向。在他看来，基层是实现技术理想的最佳舞台，企业的信任和支持是无价的。他的故事激励着更多年轻技术人才扎根一线，在平凡岗位上追求卓越。</p>
+<h3 id="alumni-1-section-4" class="section-title">四、党建引领：基层党员的先锋担当</h3>
+<p>作为一名中共党员，赵恩才始终以党员标准严格要求自己。他积极参与公司党支部活动，将技术攻关与党建结合，带领团队攻克多项生产难题。2021年，他荣获“宜宾市优秀共产党员”称号，成为基层党员中的标杆。</p>
+<p>赵恩才常说：“党员不仅要思想上先进，更要在行动上带头。”他的言行，影响着身边的每一位同事，营造了积极向上、勇于创新的团队氛围。他的故事，也激励着更多青年投身基层。宜宾市委宣传部负责人评价道：“赵恩才的事迹，是新时代劳模精神的生动诠释。”</p>
+<h3 id="alumni-1-section-5" class="section-title">五、结语：小个子的大梦想</h3>
+<p>从1.3米的身高到车间里的“万能钥匙”，赵恩才用7年时间书写了一段励志传奇。他的故事告诉我们：基层是成长的沃土，创新是突破的钥匙，而坚持则是通往成功的桥梁。如今，赵恩才仍带着徒弟研究新的工艺优化方案。他的梦想很简单：“希望在公司完善工艺流程的进程中，贡献更多技术力量。”</p>
+<p>这位年轻劳模的足迹，早已超越个人范畴，成为新时代产业工人与科创企业同频共振的缩影。在智能终端制造的赛道上，个体的钻研与企业的赋能相互成就，共同书写着“中国智造”的未来篇章。赵恩才的成长历程，不仅是一个人的奋斗史，更是一代青年工匠的集体写照——他们以技术为信仰，以创新为使命，在基层沃土中绽放出绚丽的青春之花。</p>
+        </div>
+        <footer class="story-footer">
+          <span>赵恩才</span>
+          <a href="#contents">返回目录 <span aria-hidden="true">↑</span></a>
+        </footer>
+      </article>
+      <article id="alumni-2" class="story" style="--accent:#00a28a;--soft:#e3f7f3">
+        <header class="story-header">
+          <div class="story-index" aria-hidden="true">02</div>
+          <div class="story-title-block">
+            <p class="story-kicker">优秀校友系列报道 —— 付锡莹</p>
+            <h2>当图纸遇见未来：一位造价师的跨界长征</h2>
+            
+            <div class="story-meta"><span>付锡莹</span><span>工程造价专业</span><span>2015届</span></div>
+          </div>
+        </header>
+        <div class="story-body">
+          <p class="lead">八年前，她手中的刻度尺丈量着图纸上的毫米误差；八年后，她的目光已跨越钢筋水泥的边界，望向行业变革的远方。付锡莹——宜宾职业技术学院工程造价专业2015届毕业生，用八年时间完成了一场从“数字工匠”到“行业连接者”的蜕变。从精密计算每一方混凝土的成本，到用数字化重构造价逻辑；从独自面对创业的晨昏，到重返讲台点燃后继者的目光，她以专业为锚，以创新为帆，在传统建筑业与数字浪潮的交汇处，开拓出一条充满韧性的成长航道。</p>
+          <h3 id="alumni-2-section-1" class="section-title">一、扎根：在毫米之间磨砺匠心</h3>
+<p>2015年的夏天，付锡莹踏入造价咨询公司的大门。当同龄人还在适应办公室节奏时，她已戴上安全帽，主动扎进尘土飞扬的工地。“图纸是静态的，但建筑是生长的。”她说。白天，她穿行于脚手架间，记录施工细节；夜晚，她对照《建设工程工程量清单计价规范》，将住宅、商业、市政等不同业态的造价逻辑拆解重组。</p>
+<p>这份“较真”很快显露出价值。在某综合体项目中，她发现施工方申报的混凝土用量与图纸存在5%偏差。连续三天现场复核后，她以确凿数据为企业挽回80余万元损失。这种“较真”精神让她两年内快速成长：经手12个大型项目，精通广联达等专业软件，积累了涵盖土建、安装、装饰等多领域的造价经验。更重要的是，她敏锐察觉到行业痛点——全国30万家造价咨询机构中90%为小微企业，服务标准参差不齐，这为她日后创业埋下伏笔。</p>
+<h3 id="alumni-2-section-2" class="section-title">二、破局：在数字浪潮中重塑行业逻辑</h3>
+<p>2018年，付锡莹在德阳创立了自己的造价咨询公司。创业初期，她既是项目经理，也是业务员，经常为赶制一份标书连续工作。但她清楚，单纯拼人力并非长久之计。“造价行业正站在数字化转型的关口，”她敏锐察觉，“未来的竞争力，在于能否用技术提升决策质量。”</p>
+<p>2023年，她在成都创立第二家公司，全面引入BIM技术和造价大数据分析。通过三维建模与实时数据联动，她带领团队将造价工作从“事后核算”转向“事前控制”，帮助客户在项目启动前就看清成本全景。在拓展业务的同时，她重视团队建设，招聘培养专业人才，建立标准化服务流程。公司从最初的“一人作战”，发展到拥有20名专业造价师、8名技术支持人员的团队，年营收突破500万元，服务范围延伸至西藏、云南等地区，成为区域数字化转型的先行者。</p>
+<h3 id="alumni-2-section-3" class="section-title">三、传承：在讲台与工地之间搭建桥梁</h3>
+<p>教育不是重复过去，而是连接未来。2019年，付锡莹受聘成为母校的兼职教师，担任《工程造价软件应用》《建筑安装工程预算》等专业技能课程的校外兼职教师。她创新运用“项目制教学”模式：将正在服务的某学校迁建项目拆解成教学案例，学生分组完成从工程量计算到投标报价的全流程实操。这种“真题真做”的方式让毕业生就业竞争力显著提升，其指导的学生团队曾获四川省高职院校数字造价技能竞赛二等奖。</p>
+<p>2022年，她推动公司与母校共建“数字造价实训基地”，将最前沿的BIM应用场景、造价大数据平台向学生开放。每年，她的公司为在校生提供20余个实习岗位，已累计培养输送近30名专业人才。不少学生感慨：“跟着付老师学习，才知道造价不是枯燥的算量计价，而是能影响项目成败、创造价值的关键环节”。跨界实践，为造价行业人才培养注入活力，也让她的创业之路有了更深远的意义：不仅要做好业务，更要培育行业未来的火种。</p>
+<h3 id="alumni-2-section-4" class="section-title">四、超越：在多重身份中拓展价值边界</h3>
+<p>付锡莹的日程表，见证着当代职业女性的多维担当：清晨处理公司战略，午后与高校研讨课程开发，夜晚研读行业新规。她考取了一级造价工程师、注册监理工程师等多项执业资格，参与编写行业教材；作为青年创业导师，她已辅导12个创业项目；她坚持将公司营业额的3%投入教育合作，持续反哺行业人才培养。</p>
+<p>“造价不仅是数字的游戏，更是资源最优配置的艺术；创业不单为财富积累，更是组织能力的成长；教育不该囿于课堂，而要打开产业真实场景。”在她的字典里，专业从未局限于技术，而是始终与价值创造、行业进步紧密相连。</p>
+<h3 id="alumni-2-section-5" class="section-title">结语：跨界筑梦，匠心传承</h3>
+<p>从追精度到创模式，从谋发展到育新人，付锡莹用八年时间诠释了何为“专业的力量”。她的故事告诉我们：职业教育培养的人才，不仅能精深一技，更能贯通产教、融合创新。当数字时代来临，那些扎根行业、拥抱变革、不忘传承的人，终将在属于自己的坐标上，点亮一片星图。</p>
+        </div>
+        <footer class="story-footer">
+          <span>付锡莹</span>
+          <a href="#contents">返回目录 <span aria-hidden="true">↑</span></a>
+        </footer>
+      </article>
+      <article id="alumni-3" class="story" style="--accent:#e75335;--soft:#fff0ec">
+        <header class="story-header">
+          <div class="story-index" aria-hidden="true">03</div>
+          <div class="story-title-block">
+            <p class="story-kicker">优秀校友系列报道---王龙奎</p>
+            <h2>轮椅踏平荆棘路 自强书写人生章</h2>
+            <p class="story-subtitle">——“全国自强模范”王龙奎的创业与奉献之路</p>
+            <div class="story-meta"><span>王龙奎</span><span>财务管理专业</span><span>2018届</span></div>
+          </div>
+        </header>
+        <div class="story-body">
+          <p class="lead">他，曾因家境贫寒初中辍学，辗转工地谋生；他，曾因高空坠落高位截瘫，卧床十七年之久；他，三十八岁重返课堂，以527分的高考成绩圆梦大学。王龙奎，男，1975年2月生于宜宾市江安县，肢体二级残疾，2018年6月毕业于宜宾职业技术学院财务管理专业，现任宜宾龙奎兴中科技有限公司董事长。他以不屈的意志走出人生至暗时刻，以实干精神创办企业，以感恩之心回馈社会，用奋斗与奉献诠释了生命的厚度与温度。</p>
+          <h3 id="alumni-3-section-1" class="section-title">一、命运多舛：从辍学少年到重伤卧床</h3>
+<h4 class="subsection-title">（一）年少失学，在工地谋生</h4>
+<p>王龙奎初中毕业后，因家境困难被迫辍学，走上建筑工地，以体力劳动维持生计。然而1995年，一场突如其来的意外将20岁的他推向深渊——从11米高空坠落的瞬间，不仅击碎了他的骨骼，更击碎了他对未来的憧憬。高位截瘫的诊断书，让他在病床上一躺就是17年，14次大型手术在他身上留下层层疤痕，却从未磨灭他对站立的渴望。“我不能一辈子躺在床上靠家人养活”，这个念头如种子般在他心中扎根。当医生告知他通过康复训练有望拄拐行走时，他不顾家人劝阻，每天咬牙进行超出身体极限的锻炼。终于，他用拐杖支撑起了残缺却坚韧的身躯。</p>
+<h4 class="subsection-title">（二）重返校园，三十八岁圆梦大学</h4>
+<p>身体的残缺并未击垮王龙奎的意志。38岁那年，他毅然决定重返校园，“没读过大学是我一辈子的遗憾”，带着这份执念，他从零开始补习高中课程。面对年龄、身体、学业的层层压力，他日夜苦读，最终以527分的高考成绩被宜宾职业技术学院财务管理专业录取，圆了迟到二十年的大学梦。</p>
+<h3 id="alumni-3-section-2" class="section-title">二、求职坎坷：从屡屡被拒到职场立足</h3>
+<h4 class="subsection-title">（一）十余次碰壁，不言放弃</h4>
+<p>2018年6月，王龙奎大学顺利毕业，尽管具备专业知识和坚定信念，但求职路上却屡屡受挫。“你这样的身体条件，没法胜任会计工作”“我们需要能随时外出对接业务的员工”，面试官的婉拒如冷水般浇下，但他从未想过放弃。“我虽然腿脚不便，但我的专业能力不输任何人”，带着这份底气，他在每次面试前都做足准备，用专业分析和精准的案例解读打动招聘方。终于，四川申信达财务管理有限公司向他伸出橄榄枝，聘用他为会计，他用实力赢得了认可。</p>
+<h4 class="subsection-title">（二）积累经验，奠定创业基础</h4>
+<p>在会计岗位上，王龙奎不仅熟练掌握了财务实务操作，更深入理解了企业运营与管理的内在逻辑。他利用业余时间不断学习政策法规、市场动态，思考如何将专业知识与社会需求相结合。这段经历，为他日后创办企业、服务社会埋下了伏笔。</p>
+<h3 id="alumni-3-section-3" class="section-title">三、创业报国：从一人追梦到众人同行</h3>
+<h4 class="subsection-title">（一）创办企业，带动就业</h4>
+<p>职场上的站稳脚跟，让王龙奎萌生了更大的梦想——创办自己的公司，为更多残疾人提供就业机会。2019年11月，宜宾龙奎兴中科技有限公司正式成立，他身兼董事长与法人代表，开启了创业新征程。公司成立三年多来，累计向国家上缴税收近18万元。他始终坚持“企业发展不忘社会责任”的理念，将营业额的5%设立为残疾人基金，累计捐款捐物达4.2万元。“我能有今天，离不开社会的帮助，现在我有能力了，就要回馈社会”，他是这样说的，更是这样做的。公司近30个就业岗位中，残疾人占了12个，他还积极对接资源，协助3名残疾大学生进入政府部门就业，用实际行动为残疾人撑起一片天。</p>
+<h4 class="subsection-title">（二）捐资助学，点亮希望</h4>
+<p>从2018年10月起，王龙奎每月资助两名困难高中生800元生活费，帮助他们安心学习直至考上大学。他说：“我经历过困苦，知道读书的机会多么珍贵。能帮一个是一个，能点亮一盏灯就点亮一盏。”如今的他依然步履不停，用拐杖丈量着人生的宽度，用爱心温暖着更多人。</p>
+<h3 id="alumni-3-section-4" class="section-title">四、荣誉见证：从基层典型到全国模范</h3>
+<p>2019年5月16日，他作为“全国自强模范”代表，在北京人民大会堂受到习近平总书记等党和国家领导人的亲切接见，握手汇报时，总书记的点头是对他最大的肯定。此外，他还曾获评“四川省最励志自强典型”“高校毕业生基层就业卓越奖”“四川好人”等荣誉，这些荣誉背后，是他跨越苦难的坚韧，是对他个人品格的认可，也是对他多年来坚持公益、反哺社会的褒奖。</p>
+<h3 id="alumni-3-section-5" class="section-title">五、结语：生命以痛吻我，我却报之以歌</h3>
+<p>从工地少年到截瘫患者，从三十八岁大学生到企业创始人，从受助者到助人者——王龙奎用半生经历书写了一部“逆袭”传奇。如今，王龙奎仍带领着他的团队，在创业与公益的道路上坚定前行，他的身影已成为新时代残疾人自强不息、感恩奋进的象征，也成为无数青年学子扎根基层、回报社会的精神灯塔。</p>
+        </div>
+        <footer class="story-footer">
+          <span>王龙奎</span>
+          <a href="#contents">返回目录 <span aria-hidden="true">↑</span></a>
+        </footer>
+      </article>
+      <article id="alumni-4" class="story" style="--accent:#a540d1;--soft:#f7eafd">
+        <header class="story-header">
+          <div class="story-index" aria-hidden="true">04</div>
+          <div class="story-title-block">
+            <p class="story-kicker">优秀校友系列报道--赵小燕</p>
+            <h2>十年辛勤探索 终得“梅花”扑鼻 ——“三角梅女王”的创业之路</h2>
+            
+            <div class="story-meta"><span>赵小燕</span><span>园林专业</span><span>2008届</span></div>
+          </div>
+        </header>
+        <div class="story-body">
+          <p class="lead">她不是园艺科班出身的天才，却让三角梅在川南大地上绽放出产业之花；她没有雄厚的创业资本，却凭借一股不服输的韧劲，带领千户农民走上致富之路。赵小燕，中共党员，2008年毕业于宜宾职业技术学院园林专业，2016年获得四川农业大学本科学历，现任宜宾似锦园林有限公司总经理，先后荣获四川省返乡创业明星、宜宾市创新创业大赛一等奖等荣誉。她用十年时间，从一个普通技术员成长为川渝黔地区最大的三角梅种植企业负责人，用实干诠释了“扎根乡土、回报农村”的初心使命。</p>
+          <h3 id="alumni-4-section-1" class="section-title">一、创业起步：从“组织培养员”到“三角梅拓荒者”</h3>
+<h4 class="subsection-title">（一）初识三角梅：网络+专业的创业灵感</h4>
+<p>2008年，21岁的赵小燕从园林专业毕业，入职一家园林公司负责植物组织培养。按部就班的工作未能满足她对未来的憧憬，她不断思考自己的优势与方向，不断探索着适合自己的路，最终结合专业与互联网趋势，她决定建立自产自销的花卉苗木网站。经过市场摸索，她发现三角梅花期长、易管理、收益快、市场广，决定专注三角梅产业。</p>
+<h4 class="subsection-title">（二）资源积累：建成全国首个三角梅母本资源圃</h4>
+<p>为掌握品种优势，她几乎跑遍宜宾所有三角梅种植区，买下当时宜宾地区几乎所有三角梅母本，建成全国首个三角梅母本资源圃，并创建全国首家三角梅种植专业合作社，为后续规模化、标准化发展奠定基础。</p>
+<h3 id="alumni-4-section-2" class="section-title">二、产业攻坚：从“请不到工人”到“带动万亩基地”</h3>
+<h4 class="subsection-title">（一）土地与信任的双重攻坚</h4>
+<p>创业之路并非一帆风顺。初期，三角梅因“浑身是刺”遭农户排斥，流转土地困难。农户的说法是“栽花不栽刺”“这个东西吃不得，卖不出去当柴火都要不得”。赵小燕多次上门沟通，甚至通过村委会、镇政府协调，最终以诚意打动农户。面对农户顾虑，她免费发放种苗并承诺包销，逐步建立信任，推动农户参与种植。</p>
+<h4 class="subsection-title">（二）品质与利益的平衡之道</h4>
+<p>发展初期，技术还不成熟，初期农户产品参差不齐，导致她无法保质保量把产品交给客户。为了兼顾农户利益和产品品质，她自掏腰包回收不合格产品，重新发放合格产品，曾一次损失达4万余元。她坚持“品质优先”，逐步建立“合作社+农户+基地”的共赢模式。</p>
+<h4 class="subsection-title">（三）政策与平台的借力发展</h4>
+<p>在多方努力下，她的第二个基地――下长镇益家村三角梅基地建成，政府购买83000株苗免费发放农户，合作社每株补助3毛种植费，通过政府、合作社、农户共同努力实现共赢。</p>
+<p>为了争取更多的支持，经镇党委、政府推荐，她参加宜宾市第二届创新创业大赛并获第一名，个人与产业知名度迅速提升。随后在翠屏区建立第三个基地，成立宜宾似锦园林有限公司及千日红家庭农场，带动多个村镇发展三角梅种植。</p>
+<h3 id="alumni-4-section-3" class="section-title">三、创新引领：从“传统种植”到“科技赋能”</h3>
+<h4 class="subsection-title">（一）技术突破：掌握核心繁育与控花技术</h4>
+<p>在党委、政府引荐下，她的团队得到高校专家指导，攻克三角梅繁育与花期控制难题，探索出三角梅高效繁育方法与三角梅人工控花技术并申报国家专利。她将技术整理成科普手册免费发放农户，累计培训700余人，推动技术下乡。</p>
+<h4 class="subsection-title">（二）专利与资质：打造科技型农业企业</h4>
+<p>她坚信企业需不断技术创新才能生存。她的公司截至2023年已获国家专利30项，授权发明专利3项，实用新型专利27项，成功申报国家高新技术企业、专精特新企业、宜宾市农业产业化龙头企业等资质。未来计划在全国率先申请三角梅相关技术标准。</p>
+<h3 id="alumni-4-section-4" class="section-title">四、社会责任：从“自己致富”到“带农共富”</h3>
+<h4 class="subsection-title">（一）带动脱贫：386户贫困户的致富引路人</h4>
+<p>她常说：“是土地给了我一切，我就该回馈农村。”赵小燕没有忘记带领周边农户发展的初心，通过“委托种植+技术输送+全部代销”模式，她直接带动386户贫困户脱贫，累计脱贫捐款31900元，发放扶贫收益分红28.8万元，劳动报酬80万元，户均增收4万元。正是因为她的不懈努力和坚持带动农户发展，让农户也能享受到种植三角梅带来的效益。</p>
+<h4 class="subsection-title">（二）公益行动：地震与疫情中的担当</h4>
+<p>长宁地震时，她自筹物资逆行救援；新冠疫情期间，她主动向农户宣传防疫知识、赠送口罩，践行企业社会责任。</p>
+<h3 id="alumni-4-section-5" class="section-title">五、结语：三角梅绽放的不仅是花，更是梦想</h3>
+<p>从普通技术员到年产量500万株的三角梅产业领军者，赵小燕用十年时间，在乡土中扎根，在困难中突围，在创新中成长。她的故事证明：乡村振兴需要青年，农业创业大有可为。如今，她计划开发三角梅微型盆栽、延伸产业链、成立联合社，带领更多农户走向共同富裕。这位“三角梅女王”的梦想，正如她手中的花朵，绚烂而坚定――让宜宾三角梅开遍全国，让更多农民因花而富。</p>
+        </div>
+        <footer class="story-footer">
+          <span>赵小燕</span>
+          <a href="#contents">返回目录 <span aria-hidden="true">↑</span></a>
+        </footer>
+      </article>
+      <article id="alumni-5" class="story" style="--accent:#d89000;--soft:#fff5d9">
+        <header class="story-header">
+          <div class="story-index" aria-hidden="true">05</div>
+          <div class="story-title-block">
+            <p class="story-kicker">优秀校友系列报道</p>
+            <h2>破茧成蝶，筑梦商海：从宜职院走出的行业领军人王光梅</h2>
+            
+            <div class="story-meta"><span>王光梅</span><span>应用化工技术专业</span><span>2008届</span></div>
+          </div>
+        </header>
+        <div class="story-body">
+          <p class="lead">在宜宾职业技术学院的优秀校友谱系中，王光梅的名字闪耀着独特的光芒。从一名潜心钻研的化工专业学子，到执掌实业集团的董事长，她用近二十年的奋斗历程，生动诠释了“秉承大同，钵传天工”的校训精神，更谱写了一段破茧成蝶、逆风飞翔的职场传奇。</p>
+          <h3 id="alumni-5-section-1" class="section-title">一、校园淬火：以勤为径，为梦想铺就第一块基石</h3>
+<p>2005年，带着对化工领域的浓厚兴趣，王光梅考入宜宾职业技术学院应用化工技术专业。彼时的她或许未曾想到，这段校园时光会为日后的商业帝国奠定如此坚实的根基。在校期间，她如饥似渴地汲取专业知识，系统学习了化工单元操作、分析化学、化工工艺等核心课程，构建起扎实的理论功底。但王光梅的成长不止于书本。她深知“纸上得来终觉浅”，于是积极参与企业实践教学，将理论付诸实践，锤炼出过硬的动手能力。更为难得的是，她主动选修化工前沿课程，担任生物与化工工程系学生会主席，在学术视野拓展与组织协调能力提升之间找到了平衡。这段经历，不仅让她对行业趋势有了敏锐的感知，更培养了她精益求精、敢于创新的职业品格。2008年毕业时，她已不是一张白纸，而是一块经过了精心雕琢的璞玉，蓄势待发。</p>
+<h3 id="alumni-5-section-2" class="section-title">二、商海砺剑：以专业为刃，劈开从技术到市场的荆棘路</h3>
+<p>2008年，王光梅从天原化工厂的基层一线起步，完成从学生到职业人的蜕变。但她的目光并未停留在操作台上，2009年，她选择跳出舒适区，入职云南巨龙伟业有限公司，转战销售领域。这一转身，尽显胆识与魄力。凭借对化工产品技术参数的深刻理解，以及女性特有的细腻与韧性，她迅速将专业知识转化为市场语言，精准捕捉客户需求，短短三年便成长为销售业务骨干并担任区域经理。2011年，已是行业熟手的王光梅迎来职业生涯的关键转折——参与创建云南友源混凝土有限公司，并出任营销总监。在这里，化工专业背景赋予了她对产品质量与生产流程的极致敏感，她提出“价值创造”核心理念，将技术优势融入营销策略，带领团队在激烈的市场竞争中屡创佳绩。从一线操作工到企业高管，王光梅用实力证明：扎实的专业素养在任何岗位上都是最硬的底牌。</p>
+<h3 id="alumni-5-section-3" class="section-title">三、掌舵风云：以价值为核，铸就行业标杆的跃迁之路</h3>
+<p>如果说创业初期是激情与机遇的碰撞，那么将企业带向行业之巅则需要超凡的智慧与定力。执掌友源混凝土有限公司后，王光梅并未停下脚步。她以技术创新和管理优化为双轮驱动，在混凝土行业率先树立服务标准，搭建信息化管理平台，并探索区块链管理等前沿应用，使公司一举拿下多项行业“首发”优势。凭借卓越的产品质量和客户口碑，友源混凝土成为中建系统内央企的核心战略伙伴，市场占有率在昆明市民营企业中稳居第一。2020年，她当选公司董事长兼总经理；2023年，她整合资源成立云南锟耀实业集团，完成了从单一企业到实业集团的华丽跃升，使锟耀成为云南省混凝土行业的标杆。与此同时，她的行业影响力也辐射至更广领域——2020年当选昆明市呈贡区工商联合会执行理事，2022年兼任上海行动教育云南分校秘书长及昆明市混凝土散装协会秘书长。这些身份，既是对她商业成就的认可，亦是对她行业贡献的褒奖。</p>
+<h3 id="alumni-5-section-4" class="section-title">四、初心回响：以奋斗丈量来路，用担当照亮未来</h3>
+<p>回望来路，王光梅始终将母校的培育铭记于心。她常说，是宜宾职业技术学院的精神基因，赋予了她持续奋斗的内生动力。从校园到商海，从技术员到董事长，她以持续奋斗丈量着梦想与现实的距离，更以实业报国的情怀彰显着企业家的使命担当。她带领的锟耀集团，不仅关注经济效益，更注重资源共享与协同发展，努力为行业进步与社会福祉贡献力量。</p>
+<p>王光梅的故事，是一个关于选择、坚持与超越的励志范本。她告诉每一位宜职院学子：无论起点在哪里，只要扎根专业、勇于探索、心怀梦想，就能在广阔的人生舞台上绽放光芒。</p>
+        </div>
+        <footer class="story-footer">
+          <span>王光梅</span>
+          <a href="#contents">返回目录 <span aria-hidden="true">↑</span></a>
+        </footer>
+      </article>
+      <p class="endnote">优秀校友系列报道 · 五人专题合集</p>
+    </section>
+  </main>
+
+  <button class="backtop" type="button" aria-label="返回顶部">↑</button>
+  <script>
+    (() => {
+      const progress = document.querySelector('.progress');
+      const backtop = document.querySelector('.backtop');
+      const toc = document.querySelector('.toc');
+      const toggle = document.querySelector('.toc-toggle');
+      const items = [...document.querySelectorAll('.toc-item')];
+      const stories = [...document.querySelectorAll('.story')];
+
+      const updateScroll = () => {
+        const max = document.documentElement.scrollHeight - innerHeight;
+        progress.style.width = (max > 0 ? scrollY / max * 100 : 0) + '%';
+        backtop.classList.toggle('show', scrollY > 700);
+      };
+      addEventListener('scroll', updateScroll, { passive: true });
+      updateScroll();
+
+      const observer = new IntersectionObserver(entries => {
+        const visible = entries.filter(e => e.isIntersecting).sort((a,b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (!visible) return;
+        items.forEach(item => item.classList.toggle('active', item.dataset.target === visible.target.id));
+      }, { rootMargin: '-18% 0px -66% 0px', threshold: [0, .1, .4] });
+      stories.forEach(story => observer.observe(story));
+
+      toggle?.addEventListener('click', () => {
+        const open = toc.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? '收起目录' : '展开目录');
+      });
+      document.querySelectorAll('.toc a').forEach(link => link.addEventListener('click', () => {
+        const selected = link.closest('.toc-item');
+        items.forEach(item => item.classList.toggle('active', item === selected));
+        if (innerWidth <= 900) { toc.classList.remove('open'); toggle?.setAttribute('aria-expanded','false'); }
+      }));
+      addEventListener('keydown', event => {
+        if (event.key === 'Escape') { toc.classList.remove('open'); toggle?.setAttribute('aria-expanded','false'); }
+      });
+      backtop.addEventListener('click', () => scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }));
+    })();
+  </script>
+</body>
+</html>
